@@ -14,6 +14,7 @@
 		E8AAA9C42A47122F00190C49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8AAA9C32A47122F00190C49 /* Assets.xcassets */; };
 		E8AAA9C72A47122F00190C49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8AAA9C52A47122F00190C49 /* LaunchScreen.storyboard */; };
 		E8AAA9CA2A47122F00190C49 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AAA9C92A47122F00190C49 /* main.m */; };
+		E8AAA9D42A47123C00190C49 /* CoreDataPersistent.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AAA9D12A47123C00190C49 /* CoreDataPersistent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,9 @@
 		E8AAA9C62A47122F00190C49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8AAA9C82A47122F00190C49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8AAA9C92A47122F00190C49 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E8AAA9D12A47123C00190C49 /* CoreDataPersistent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataPersistent.m; sourceTree = "<group>"; };
+		E8AAA9D22A47123C00190C49 /* MQTTPersistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTPersistence.h; sourceTree = "<group>"; };
+		E8AAA9D32A47123C00190C49 /* CoreDataPersistent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataPersistent.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 		E8AAA9B62A47122E00190C49 /* CoreDataExample */ = {
 			isa = PBXGroup;
 			children = (
+				E8AAA9D02A47123C00190C49 /* Persistent */,
 				E8AAA9B72A47122E00190C49 /* AppDelegate.h */,
 				E8AAA9B82A47122E00190C49 /* AppDelegate.m */,
 				E8AAA9BA2A47122E00190C49 /* SceneDelegate.h */,
@@ -74,6 +79,16 @@
 				E8AAA9C92A47122F00190C49 /* main.m */,
 			);
 			path = CoreDataExample;
+			sourceTree = "<group>";
+		};
+		E8AAA9D02A47123C00190C49 /* Persistent */ = {
+			isa = PBXGroup;
+			children = (
+				E8AAA9D32A47123C00190C49 /* CoreDataPersistent.h */,
+				E8AAA9D12A47123C00190C49 /* CoreDataPersistent.m */,
+				E8AAA9D22A47123C00190C49 /* MQTTPersistence.h */,
+			);
+			path = Persistent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +165,7 @@
 				E8AAA9B92A47122E00190C49 /* AppDelegate.m in Sources */,
 				E8AAA9CA2A47122F00190C49 /* main.m in Sources */,
 				E8AAA9BC2A47122E00190C49 /* SceneDelegate.m in Sources */,
+				E8AAA9D42A47123C00190C49 /* CoreDataPersistent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
